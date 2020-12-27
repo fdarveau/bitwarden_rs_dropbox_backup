@@ -5,8 +5,6 @@ services:
     restart: always
     volumes:
       - ./db.sqlite3:/db.sqlite3
+      - /config:/config
     environment:
-      - DROPBOX_APP_KEY=xxx
-      - DROPBOX_APP_SECRET=xxx
-      - DROPBOX_REFRESH_TOKEN=xxx
       - BACKUP_ENCRYPTION_KEY=xxx
